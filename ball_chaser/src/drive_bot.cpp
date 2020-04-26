@@ -44,6 +44,7 @@ class SubscribeAndPublish {
     // Fill in the response message
     res.msg_feedback = "motor_command.linear.x = " + std::to_string(motor_command.linear.x) +
                        ", motor_command.angular.z = " + std::to_string(motor_command.angular.z);
+    ROS_INFO("%s", res.msg_feedback.c_str());
     return true;
   }
 
